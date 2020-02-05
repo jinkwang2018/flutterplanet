@@ -26,18 +26,11 @@ class _HomePageState extends State<HomePage> {
         backgroundColorEnd: Colors.indigo,
       ),
       
-      body:SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            new HomePageBody(),
-            new HomePageBody(),
-            new HomePageBody(),
-            new HomePageBody(),
-            new HomePageBody(),
-          ],
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          new HomePageBody(),
+        ],
       ),
     );
   }
