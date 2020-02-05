@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterplanet/HomePageBody.dart';
 import 'package:gradient_app_bar/gradient_app_bar.dart';
 
 class HomePage extends StatefulWidget {
@@ -25,10 +26,18 @@ class _HomePageState extends State<HomePage> {
         backgroundColorEnd: Colors.indigo,
       ),
       
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-        ],
+      body:SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            new HomePageBody(),
+            new HomePageBody(),
+            new HomePageBody(),
+            new HomePageBody(),
+            new HomePageBody(),
+          ],
+        ),
       ),
     );
   }
