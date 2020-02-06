@@ -6,9 +6,10 @@ class Planet {
   final String gravity;
   final String description;
   final String image;
+  final String picture;
 
   const Planet({this.id, this.name, this.location, this.distance, this.gravity,
-    this.description, this.image});
+    this.description, this.image, this.picture});
 }
 
 List<Planet> planets = [
@@ -20,6 +21,7 @@ List<Planet> planets = [
     gravity: "3.711 m/s ",
     description: "Lorem ipsum...",
     image: "assets/img/mars.png",
+    picture: "assets/img/marsBG.jpg",
   ),
   const Planet(
     id: "2",
@@ -29,6 +31,7 @@ List<Planet> planets = [
     gravity: "11.15 m/s ",
     description: "Lorem ipsum...",
     image: "assets/img/neptune.png",
+    picture: "assets/img/neptuneBG.jpg",
   ),
   const Planet(
     id: "3",
@@ -38,6 +41,7 @@ List<Planet> planets = [
     gravity: "1.622 m/s ",
     description: "Lorem ipsum...",
     image: "assets/img/moon.png",
+    picture: "assets/img/MoonBG.jpg",
   ),
   const Planet(
     id: "4",
@@ -47,6 +51,7 @@ List<Planet> planets = [
     gravity: "9.807 m/s ",
     description: "Lorem ipsum...",
     image: "assets/img/earth.png",
+    picture: "assets/img/EarthBG.jpg",
   ),
   const Planet(
     id: "5",
@@ -56,5 +61,6 @@ List<Planet> planets = [
     gravity: "3.7 m/s ",
     description: "Lorem ipsum...",
     image: "assets/img/mercury.png",
+    picture: "assets/img/MercuryBG.jpg",
   ),
 ];
