@@ -20,11 +20,22 @@ class DetailPage extends StatelessWidget {
             _getBackground(),
             _getGradient(),
             _getContent(),
-            //_getToolbar(context),
+            _getToolbar(context),
           ],
         ),
       ),
     );
+  }
+
+  Container _getToolbar(BuildContext context) {
+    return new Container(
+            margin: new EdgeInsets.only(
+                top: MediaQuery
+                    .of(context)
+                    .padding
+                    .top),
+            child: new BackButton(color: Colors.white),
+          );
   }
 
   Container _getBackground () {
